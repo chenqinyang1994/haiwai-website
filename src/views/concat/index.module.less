@@ -1,0 +1,72 @@
+@import '~vars.less';
+
+.component {
+    &.container {
+        list-style: none;
+        // min-height: calc(100vh - 216px);
+        min-height: calc(100vh -248px);
+        .concatPage {
+            min-height: calc(100vh - 225px);
+            padding: 78px;
+            margin: 40px 0 0 0;
+            border-radius: 10px;
+            background: #fff;
+            .title {
+                height: 66px;
+                font-size: 32px;
+                color: #263137;
+                padding-bottom: 33px;
+                border-bottom: 1px solid #dddddd;
+                line-height: 1;
+                position: relative;
+                span {
+                    border-bottom: 1px solid #fc8622;
+                    padding-bottom: 33px;
+                    position: absolute;
+                    left: 0;
+                    bottom: -1px;
+                }
+            }
+            ul {
+                margin: 40px auto;
+                li {
+                    list-style: none;
+                    line-height: 24px;
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                    color: #646464;
+                    a {
+                        color: #646464;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        &.container {
+            min-height: calc(100vh - 224px);
+            .concatPage {
+                margin: 15px 0;
+                padding: 30px;
+                border-radius: 8px;
+                .title {
+                    height: 40px;
+                    font-size: 18px;
+                    padding-bottom: 20px;
+                    margin-bottom: 30px;
+
+                    span {
+                        padding-bottom: 20px;
+                    }
+                }
+                ul {
+                    li {
+                        font-size: 12px;
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+    }
+}

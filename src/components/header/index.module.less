@@ -1,0 +1,109 @@
+@import '~vars.less';
+
+.component {
+    background: #6b71f6;
+    padding: 16px 0;
+    .headerBox {
+        max-width: @main-width;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            font-size: 28px;
+            font-weight: 500;
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        .nav {
+            a {
+                width: 120px;
+                margin: 0 8px;
+                text-align: center;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 0;
+                font-size: 14px;
+                border: 1px solid #fe7a0c;
+                display: inline-block;
+                opacity: 0.7;
+                font-weight: 500;
+                &.cur {
+                    border-color: rgba(255, 255, 255, 0.7);
+                    border-radius: 20px;
+                    opacity: 1;
+                }
+            }
+        }
+        .arrow {
+            display: none;
+        }
+    }
+    @media (max-width: 1200px) {
+        .headerBox {
+            padding: 0 40px;
+            .nav {
+                a {
+                    width: 100px;
+                    margin: 0 8px;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .component {
+            padding: 14px;
+        }
+        .headerBox {
+            display: initial;
+            padding: 17px 15px;
+            .logo {
+                font-size: 20px;
+                color: #fff;
+                float: left;
+                margin-left: 15px;
+            }
+            .arrow {
+                float: right;
+                margin-right: 15px;
+                display: block;
+                img {
+                    width: 26px;
+                    display: inline-block;
+                }
+            }
+            .nav {
+                position: absolute;
+                top: 60px;
+                right: 10px;
+                padding: 20px 0;
+                display: flex;
+                flex-direction: column;
+                border-radius: 6px;
+                background: rgba(40, 40, 40, 0.9);
+                z-index: 99;
+                &.show {
+                    display: none;
+                }
+                a {
+                    border: none;
+                    padding: 14px 34px;
+                    text-align: center;
+                    font-size: 18px;
+                    width: auto;
+                    &.cur {
+                        border: none;
+                        border-radius: 0;
+                    }
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}

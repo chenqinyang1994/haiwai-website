@@ -1,0 +1,92 @@
+@import '~vars.less';
+
+.component {
+    margin-top: 40px;
+    .footer {
+        width: 100%;
+        text-align: center;
+
+        color: #fff;
+        font-size: 14px;
+        display: block;
+        background: #000;
+        padding: 22px 0;
+
+        .footerContent {
+            display: flex;
+            justify-content: center;
+
+            .lBox {
+                padding-right: 14px;
+                margin-right: 14px;
+                justify-content: flex-end;
+                .copyright {
+                    opacity: 0.7;
+                }
+                .links {
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        margin-right: 6px;
+                        opacity: 0.7;
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                }
+                & > div {
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .rBox {
+                text-align: left;
+                & > div {
+                    margin-bottom: 10px;
+                    opacity: 0.7;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .footerM {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .component {
+        background: #000;
+
+        .footer {
+            display: none !important;
+        }
+        .footerM {
+            padding: 17px 18px 19px 18px;
+            font-size: 9px;
+            color: #fff;
+            line-height: 1.6;
+            display: table;
+            margin: 0 auto;
+            & > div {
+                opacity: 0.7;
+            }
+            .links {
+                a {
+                    color: #fff;
+
+                    text-decoration: none;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}

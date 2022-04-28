@@ -1,0 +1,72 @@
+@import '~vars.less';
+
+.component {
+    // .gameWrap{
+    //     min-height: calc(100vh - 538px);
+    // }
+    min-height: calc(100vh -268px);
+
+    .gameWrap {
+        max-width: @main-width;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        .title {
+            margin-top: 60px !important;
+            margin-bottom: 30px !important;
+            font-size: 24px;
+            color: #263137;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            span {
+                font-size: 14px;
+                color: #646464;
+                margin-left: 10px;
+                font-weight: 400;
+                &::before {
+                    content: '|';
+                    padding-right: 10px;
+                }
+            }
+        }
+        .listWrap {
+            grid-template-columns: repeat(2, 1fr);
+            .box {
+                padding-bottom: 50px;
+                .name {
+                    padding-bottom: 17px;
+                }
+                .desc {
+                    -webkit-line-clamp: 2;
+                }
+                .describe {
+                    flex: 3;
+                }
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .gameWrap {
+            .title {
+                font-size: 18px;
+                margin-top: 40px !important;
+                margin-bottom: 20px !important;
+                span {
+                    font-size: 12px;
+                }
+            }
+            .listWrap {
+                grid-template-columns: repeat(1, 1fr);
+                .box {
+                    padding-bottom: 30px;
+                    .name {
+                        padding-bottom: 14px;
+                    }
+                    .desc {
+                        -webkit-line-clamp: 3;
+                    }
+                }
+            }
+        }
+    }
+}

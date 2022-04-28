@@ -1,0 +1,61 @@
+{
+    "name": "haiwai-website",
+    "private": true,
+    "version": "1.0.0",
+    "description": "haiwai-website",
+    "license": "none",
+    "engines": {
+        "node": ">=10.13.0"
+    },
+    "scripts": {
+        "start": "koot-start",
+        "build": "koot-build",
+        "dev": "koot-dev",
+        "analyze": "koot-analyze",
+        "eslint": "eslint \"src/**/*.+(js|jsx)\"",
+        "check-types": "tsc --noEmit",
+        "up": "yarn upgrade-interactive --latest"
+    },
+    "dependencies": {
+        "axios": "^0.19.2",
+        "bind-event": "^1.1.2",
+        "classnames": "^2.2.6",
+        "koot": "^0.14.12",
+        "swiper": "^6.8.1"
+    },
+    "devDependencies": {
+        "@types/classnames": "^2.2.10",
+        "autoprefixer": "^9.8.6",
+        "babel-eslint": "^10.1.0",
+        "cssnano": "^4.1.10",
+        "eslint": "^7.6.0",
+        "eslint-config-koot": "^1.7.1",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.11",
+        "normalize.css": "^8.0.1",
+        "prettier": "^2.0.5",
+        "prettier-eslint": "^11.0.0",
+        "redux-logger": "^3.0.6",
+        "svg-url-loader": "^6.0.0",
+        "postcss": "^8.3.6",
+        "postcss-pxtorem": "^5.0.0",
+        "url-loader": "^4.1.0"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx,cjs,mjs,ts,tsx}": [
+            "eslint --fix",
+            "prettier --write"
+        ],
+        "*.{json,md,css,less,sass,scss}": [
+            "prettier --write"
+        ]
+    },
+    "koot": {
+        "version": "0.14.12"
+    }
+}

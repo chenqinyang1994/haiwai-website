@@ -1,0 +1,30 @@
+@import '~vars.less';
+
+.component {
+    min-height: 100vh;
+    //   min-height:calc(100vh - 66px) ;
+    //   padding:80px 0 105px;
+    background: #f9fafa;
+    .main {
+        // min-height: calc(100vh -248px);
+        padding: 0 40px;
+    }
+    .container {
+        margin: 0 auto;
+
+        max-width: @main-width;
+    }
+}
+
+@media (max-width: 768px) {
+    .component {
+        .container {
+            width: 100%;
+        }
+        .main {
+            margin: 0 14px;
+            padding: 0;
+            min-height: calc(100vh - 164px);
+        }
+    }
+}

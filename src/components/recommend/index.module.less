@@ -1,0 +1,128 @@
+@import '~vars.less';
+
+.component {
+    .title {
+        margin-top: 60px !important;
+        margin-bottom: 30px !important;
+        font-size: 24px;
+        color: #263137;
+        display: flex;
+        align-items: center;
+        span {
+            font-size: 14px;
+            color: #646464;
+            margin-left: 10px;
+            font-weight: 400;
+            &::before {
+                content: '|';
+                padding-right: 10px;
+            }
+        }
+    }
+    .artBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 98px 0 70px;
+        background: #fff;
+
+        .lBox {
+            width: 510px;
+            padding: 42px 0;
+            .info {
+                margin-bottom: 18px;
+                p {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #646464;
+                }
+            }
+            .specialty {
+                display: flex;
+
+                justify-content: flex-start;
+                align-items: center;
+                dl {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 39px;
+                    dt {
+                        img {
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+                    dd {
+                        font-size: 14px;
+                        color: #666;
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+        .rBox {
+            width: 404px;
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 890px) {
+        .artBox {
+            padding: 0 38px 0 40px;
+        }
+    }
+
+    @media (max-width: 860px) {
+        .title {
+            font-size: 18px;
+            margin-top: 40px !important;
+            margin-bottom: 20px !important;
+            span {
+                font-size: 12px;
+            }
+        }
+        .artBox {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 30px 27px 0 27px;
+            .lBox {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                .info {
+                    p {
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
+                .specialty {
+                    justify-content: center;
+                    // display: grid;
+                    margin-top: 24px;
+                    dl {
+                        margin: 0 20px;
+                        dt {
+                            img {
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            .rBox {
+                width: 100%;
+                img {
+                    width: 253px;
+                    height: auto;
+                    margin: 43px auto 0 auto;
+                }
+            }
+        }
+    }
+}

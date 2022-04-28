@@ -1,0 +1,27 @@
+@import '~vars.less';
+
+.component {
+    background: transparent !important;
+
+    .picList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        dl {
+            margin: 10px;
+
+            .pic {
+                width: 200px;
+                height: 200px;
+                display: block;
+                margin: 10px auto;
+            }
+            dd {
+                width: 200px;
+                word-break: break-all;
+            }
+        }
+    }
+}

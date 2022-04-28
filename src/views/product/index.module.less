@@ -1,0 +1,57 @@
+@import '~vars.less';
+
+.component {
+    background: #f9fafa;
+    min-height: calc(100vh -268px);
+
+    .container {
+        margin: 0 auto;
+        max-width: @main-width;
+        .title {
+            margin-top: 60px !important;
+            margin-bottom: 30px !important;
+            font-size: 24px;
+            color: #263137;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            span {
+                font-size: 14px;
+                color: #646464;
+                margin-left: 10px;
+                font-weight: 400;
+                &::before {
+                    content: '|';
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .component {
+        .container {
+            width: 900px;
+            //   min-height:calc(100vh - 252px) ;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .component {
+        // padding: 30px 0 50px;
+        .container {
+            width: 100%;
+            min-height: auto;
+            .title {
+                font-size: 18px;
+                margin-top: 40px !important;
+                margin-bottom: 20px !important;
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
