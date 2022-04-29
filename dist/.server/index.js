@@ -1340,7 +1340,7 @@ try {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/chenqinyang/Desktop/haiwai/node_modules/koot/ReactSPA/server */"./node_modules/koot/ReactSPA/server/index.js");
+module.exports = __webpack_require__(/*! /Users/chenqinyang/Documents/GitHub/haiwai-website/node_modules/koot/ReactSPA/server */"./node_modules/koot/ReactSPA/server/index.js");
 
 
 /***/ }),
