@@ -9,7 +9,7 @@ import styles from './index.module.less';
 
 const Footer = extend({
     pageinfo: () => ({
-        title: `Super Cleaner`,
+        title: `Super Booster`,
     }),
     styles,
 })(
@@ -20,7 +20,7 @@ const Footer = extend({
                     <div className="footerContent">
                         <div className="lBox">
                             <div className="copyright">
-                                copyright@2022 All Right Super Cleaner
+                                copyright@2022 All Right Super Booster
                             </div>
                             <div className="links">
                                 <Link to="/wifePrivacyPolicy">
@@ -34,7 +34,7 @@ const Footer = extend({
                     </div>
                 </div>
                 <div className="footerM">
-                    <div>copyright@2022 All Right Super Cleaner</div>
+                    <div>copyright@2022 All Right Super Booster</div>
                     <div className="links">
                         <Link to="/wifePrivacyPolicy">privacy policy</Link>
                         <Link to="/wifeuserAgreement">user agreement</Link>

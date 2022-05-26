@@ -1,4 +1,4 @@
-# app-ads.txt Super Cleaner. 
+# app-ads.txt Super Booster.
 
 # Meta
 facebook.com,1132426307613386, DIRECT, c3e20eee3f780d68

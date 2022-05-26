@@ -6,9 +6,22 @@ import classNames from 'classnames';
 import clearImg from '@assets/haiwai-img/clear.png';
 import styles from './index.module.less';
 
+const textMap = [
+    'SuperBooster is your best choice to solve the stuttering of your phone.',
+    'Main Feature:',
+    'Phone Boost:',
+    'Super Booster focuses on optimizing your phone speed. Clear your phone of junk files and dead processes to make your device run faster.',
+    'Junk Clean:',
+    'If you have too much junk on your phone, it will cause you to run out of storage space and slow down your phone. Regular junk cleaning can keep your phone in a relaxed state.',
+    'Battery Saver:',
+    'When there are programs running secretly in the background of the mobile phone, the mobile phone will consume a lot of power. The power saving feature can help you end ineffective processes. But you can rest assured that we will not kill the main process and will not affect your use.',
+    'CPU cooler:',
+    'It can effectively reduce the CPU temperature of the mobile phone, so that your mobile phone is no longer hot and runs more smoothly.',
+];
+
 const Recommend = extend({
     pageinfo: () => ({
-        title: `Super Cleaner`,
+        title: `Super Booster`,
     }),
     styles,
 })(
@@ -20,35 +33,9 @@ const Recommend = extend({
                 <div className="artBox">
                     <div className="lBox">
                         <div className="info">
-                            <p>
-                                This is probably the best cleaning tool you've
-                                ever tried. Booster, save power, and cool down
-                                easily. Super Cleaner Key Functions:
-                            </p>
-                            <p>Clean up：</p>
-                            <p>
-                                The solution is specially designed for
-                                insufficient storage space. Don't let junk slow
-                                down your phone!
-                            </p>
-                            <p>Boost:</p>
-                            <p>
-                                Focus on optimizing the speed of your phone.
-                                Solve stuttering problems with memory and
-                                fragmentation methods.
-                            </p>
-                            <p>Phone Cooler:</p>
-                            <p>
-                                It can effectively reduce the CPU temperature of
-                                Android phones, so that game and use process are
-                                no longer hot!
-                            </p>
-                            <p>Power Saver:</p>
-                            <p>
-                                Precise strategy design for processes to help
-                                you hibernate useless processes and save more
-                                power!
-                            </p>
+                            {textMap.map((text) => (
+                                <p key={text}>{text}</p>
+                            ))}
                         </div>
                     </div>
                     <div className="rBox">

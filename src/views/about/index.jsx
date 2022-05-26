@@ -7,7 +7,7 @@ import styles from './index.module.less';
 
 const About = extend({
     pageinfo: () => ({
-        title: `Super Cleaner`,
+        title: `Super Booster`,
     }),
     styles,
 })(

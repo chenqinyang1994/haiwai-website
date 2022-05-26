@@ -10,7 +10,7 @@ import styles from './index.module.less';
 
 const Game = extend({
     pageinfo: () => ({
-        title: `Super Cleaner`,
+        title: `Super Booster`,
         // metas: [{ description: __('pages.home.description') }],
     }),
     styles,
@@ -23,8 +23,8 @@ const Game = extend({
                 {
                     article_id: 1,
                     icon: clearIconImg,
-                    title: 'Super Cleaner',
-                    info: `This is probably the best cleaning tool you've ever tried. Booster, save power, and cool down easily.`,
+                    title: 'Super Booster',
+                    info: `SuperBooster is a software that focuses on mobile phone acceleration, with simple and effective functions.`,
                 },
             ]);
         }, []);

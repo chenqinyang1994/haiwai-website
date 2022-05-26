@@ -6,7 +6,7 @@ import styles from './index.module.less';
 
 const Concat = extend({
     pageinfo: () => ({
-        title: `Super Cleaner`,
+        title: `Super Booster`,
     }),
     styles,
 })(

@@ -8,7 +8,7 @@ import styles from './index.module.less';
 
 const Head = extend({
     pageinfo: () => ({
-        title: `Super Cleaner`,
+        title: `Super Booster`,
     }),
     styles,
 })(
@@ -17,7 +17,7 @@ const Head = extend({
             <div className={classNames([className])}>
                 <section className="headerBox">
                     <h2 className="logo">
-                        <Link to="/">Super Cleaner</Link>
+                        <Link to="/">Super Booster</Link>
                     </h2>
                 </section>
             </div>

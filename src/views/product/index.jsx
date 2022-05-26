@@ -10,7 +10,7 @@ import styles from './index.module.less';
 
 const Product = extend({
     pageinfo: () => ({
-        title: `Super Cleaner`,
+        title: `Super Booster`,
         // metas: [{ description: __('pages.home.description') }],
     }),
     styles,
