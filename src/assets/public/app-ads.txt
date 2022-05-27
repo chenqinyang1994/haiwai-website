@@ -1,9 +1,10 @@
-# app-ads.txt Super Booster.
+#superbooster
 
-# Meta
-facebook.com,1132426307613386, DIRECT, c3e20eee3f780d68
+#Meta
+facebook.com, 5233131896769819, DIRECT, c3e20eee3f780d68
 
-google.com, pub-4814827551947522, DIRECT, f08c47fec0942fa0
+
+google.com, pub-1640543079591033, DIRECT, f08c47fec0942fa0
 
 pangleglobal.com, 5002622, DIRECT
 
